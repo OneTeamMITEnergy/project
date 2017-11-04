@@ -3,7 +3,6 @@
 <head>
     <title>McKinsey</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/multiline.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -14,8 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
             integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"></script>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="/js/multiline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script src="/js/app.js"></script>
 </head>
 <body>
@@ -34,7 +32,7 @@
                     <h4 class="card-title">Fluid vs Time</h4>
                 </div>
                 <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime"></div>
+                    <canvas id="fluidVSTime"></canvas>
                 </div>
             </div>
         </div>
@@ -44,7 +42,7 @@
                     <h4 class="card-title">Fluid vs Time</h4>
                 </div>
                 <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime2"></div>
+                    <canvas id="fluidVSCost"></canvas>
                 </div>
             </div>
         </div>
@@ -54,7 +52,7 @@
                     <h4 class="card-title">Fluid vs Time</h4>
                 </div>
                 <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime3"></div>
+                    <canvas id="costVSSupplier"></canvas>
                 </div>
             </div>
         </div>
@@ -67,27 +65,7 @@
                     <h4 class="card-title">Fluid vs Time</h4>
                 </div>
                 <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime4"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Fluid vs Time</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime5"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Fluid vs Time</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart-wrapper" id="fluidVSTime6"></div>
+                    <canvas id="costVSTime"></canvas>
                 </div>
             </div>
         </div>
